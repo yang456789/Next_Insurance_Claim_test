@@ -1,6 +1,7 @@
-package com.ac.hosptial.controller;
+package com.ac.insurance.controller;
 
 import com.ac.common.ajax.AjaxResult;
+import com.ac.common.controller.AbstractAjaxController;
 import com.ac.hosptial.model.MedicineDetailModel;
 import com.google.common.collect.Lists;
 import org.springframework.web.bind.annotation.*;
@@ -11,8 +12,8 @@ import java.util.List;
  * Created by zhenchao.bi on 6/26/2017.
  */
 @RestController
-@RequestMapping("/hospital")
-public class MainController {
+@RequestMapping("/insurance")
+public class InsuranceMainController extends AbstractAjaxController {
 
     @GetMapping("/main")
     @ResponseBody
