@@ -14,7 +14,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/insurance")
-public class InsuranceLoginController extends AbstractAjaxController {
+public class InsuranceLoginAjaxController extends AbstractAjaxController {
 
     @PostMapping("/login")
     private AjaxResult login(@RequestBody LoginModel user) {
