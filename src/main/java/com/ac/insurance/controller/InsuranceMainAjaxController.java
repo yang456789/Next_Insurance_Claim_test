@@ -1,4 +1,4 @@
-package com.ac.hosptial.controller;
+package com.ac.insurance.controller;
 
 import com.ac.common.ajax.AjaxResult;
 import com.ac.common.controller.AbstractAjaxController;
@@ -12,8 +12,8 @@ import java.util.List;
  * Created by zhenchao.bi on 6/26/2017.
  */
 @RestController
-@RequestMapping("/hospital")
-public class HospitalMainController extends AbstractAjaxController {
+@RequestMapping("/insurance")
+public class InsuranceMainAjaxController extends AbstractAjaxController {
 
     @GetMapping("/main")
     @ResponseBody
