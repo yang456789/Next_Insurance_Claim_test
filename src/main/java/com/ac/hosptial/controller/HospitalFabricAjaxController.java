@@ -14,15 +14,14 @@ import java.util.List;
  * Created by zhenchao.bi on 6/26/2017.
  */
 @RestController
-@RequestMapping("/hospital/")
+@RequestMapping("/hospital")
 public class HospitalFabricAjaxController extends AbstractAjaxController {
 
-    @PostMapping("/medicine/save")
+    @PostMapping("/expense")
     private AjaxResult save(@RequestBody List<MedicineDetailModel> medicineDetailList) {
+
         return AjaxResult.success();
     }
-
-
 
 
 }
