@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/hospital")
-public class HospitalLoginController extends AbstractAjaxController {
+public class HospitalLoginAjaxController extends AbstractAjaxController {
 
     @PostMapping("/login")
     private AjaxResult login(@RequestBody LoginModel user) {
