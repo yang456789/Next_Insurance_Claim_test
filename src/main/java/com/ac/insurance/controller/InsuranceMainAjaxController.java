@@ -1,12 +1,8 @@
 package com.ac.insurance.controller;
 
-import com.ac.common.ajax.AjaxResult;
 import com.ac.common.controller.AbstractAjaxController;
-import com.ac.hosptial.model.MedicineDetailModel;
-import com.google.common.collect.Lists;
-import org.springframework.web.bind.annotation.*;
-
-import java.util.List;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 /**
  * Created by zhenchao.bi on 6/26/2017.
@@ -14,39 +10,5 @@ import java.util.List;
 @RestController
 @RequestMapping("/insurance")
 public class InsuranceMainAjaxController extends AbstractAjaxController {
-
-    @GetMapping("/main")
-    @ResponseBody
-    private AjaxResult main() {
-
-        List<MedicineDetailModel> medicineDetailList = Lists.newArrayList();
-
-        MedicineDetailModel model = new MedicineDetailModel();
-        model.setId("10001");
-        model.setName("medicine10001");
-        model.setPrice(100);
-        medicineDetailList.add(model);
-
-        model = new MedicineDetailModel();
-        model.setId("10002");
-        model.setName("medicine10002");
-        model.setPrice(200);
-        medicineDetailList.add(model);
-
-        model = new MedicineDetailModel();
-        model.setId("10003");
-        model.setName("medicine10003");
-        model.setPrice(300);
-        medicineDetailList.add(model);
-
-        AjaxResult result = AjaxResult.success();
-        result.addData("medicineDetailList", medicineDetailList);
-        return result;
-    }
-
-    @PostMapping("/medicine/save")
-    private AjaxResult save(@RequestBody List<MedicineDetailModel> medicineDetailList) {
-        return AjaxResult.success();
-    }
 
 }

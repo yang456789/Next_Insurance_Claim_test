@@ -8,6 +8,5 @@ public class NextInsuranceClaimMsApplication {
 
 	public static void main(String[] args) {
 		new SpringApplicationBuilder(NextInsuranceClaimMsApplication.class).web(true).run(args);
-
 	}
 }
