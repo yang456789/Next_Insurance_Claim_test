@@ -44,9 +44,4 @@ public class HospitalMainAjaxController extends AbstractAjaxController {
         return result;
     }
 
-    @PostMapping("/medicine/save")
-    private AjaxResult save(@RequestBody List<MedicineDetailModel> medicineDetailList) {
-        return AjaxResult.success();
-    }
-
 }
